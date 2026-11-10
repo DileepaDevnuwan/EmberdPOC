@@ -1,0 +1,126 @@
+[
+  {
+    "code": "HSTAT142910",
+    "hierarchyName": "Status hierarchy",
+    "module": "SALES",
+    "isActive": true,
+    "status": 0,
+    "datasetDefinitionId": "5d0cdfd0-1256-4f00-a069-358e810339ce",
+    "description": null,
+    "levels": [
+      {
+        "level": 0,
+        "displayName": "Status",
+        "dimensionColumn": "Status",
+        "datasetParameter": null
+      },
+      {
+        "level": 1,
+        "displayName": "Company",
+        "dimensionColumn": "CompanyId",
+        "datasetParameter": null
+      },
+      {
+        "level": 2,
+        "displayName": "Invoice",
+        "dimensionColumn": "InvoiceNo",
+        "datasetParameter": null
+      }
+    ],
+    "links": [],
+    "id": "446da746-cb6c-4f4c-a5f9-4a461eadc285",
+    "createdDate": "2026-11-03T16:42:23.178197+00:00",
+    "updatedDate": "2026-11-03T16:42:23.178198+00:00",
+    "workflowStatus": null,
+    "workflowColorCode": null,
+    "workflowExists": false,
+    "hasPendingDocTypeApproval": false,
+    "underReview": false,
+    "defaultWorkflowInProgress": false,
+    "workflowTransactionCategory": null,
+    "documentCode": null,
+    "documentName": null,
+    "dynamicFields": null,
+    "shareCount": 0,
+    "shareStatus": 0,
+    "isSourceRecord": true,
+    "createdBy": "52e2b78e-1960-57d6-b606-8daa9ca40567",
+    "updatedBy": "52e2b78e-1960-57d6-b606-8daa9ca40567",
+    "createdByName": {
+      "id": "52e2b78e-1960-57d6-b606-8daa9ca40567",
+      "userName": "t01-admin@t.test",
+      "email": "t01-admin@t.test",
+      "fullName": "t01-admin",
+      "isActive": false
+    },
+    "updatedByName": {
+      "id": "52e2b78e-1960-57d6-b606-8daa9ca40567",
+      "userName": "t01-admin@t.test",
+      "email": "t01-admin@t.test",
+      "fullName": "t01-admin",
+      "isActive": false
+    }
+  },
+  {
+    "code": "HSTAT120143",
+    "hierarchyName": "Status hierarchy",
+    "module": "SALES",
+    "isActive": true,
+    "status": 0,
+    "datasetDefinitionId": "fc0c9861-fb63-4c30-b3c0-d1201e47ed7d",
+    "description": null,
+    "levels": [
+      {
+        "level": 1,
+        "displayName": "Status",
+        "dimensionColumn": "Status",
+        "datasetParameter": null
+      },
+      {
+        "level": 2,
+        "displayName": "Company",
+        "dimensionColumn": "CompanyId",
+        "datasetParameter": null
+      },
+      {
+        "level": 3,
+        "displayName": "Invoice",
+        "dimensionColumn": "InvoiceNo",
+        "datasetParameter": null
+      }
+    ],
+    "links": [],
+    "id": "562d0ad6-f072-49b2-b321-f4359c63ad41",
+    "createdDate": "2026-11-03T16:42:01.754369+00:00",
+    "updatedDate": "2026-11-03T16:42:01.754381+00:00",
+    "workflowStatus": null,
+    "workflowColorCode": null,
+    "workflowExists": false,
+    "hasPendingDocTypeApproval": false,
+    "underReview": false,
+    "defaultWorkflowInProgress": false,
+    "workflowTransactionCategory": null,
+    "documentCode": null,
+    "documentName": null,
+    "dynamicFields": null,
+    "shareCount": 0,
+    "shareStatus": 0,
+    "isSourceRecord": true,
+    "createdBy": "52e2b78e-1960-57d6-b606-8daa9ca40567",
+    "updatedBy": "52e2b78e-1960-57d6-b606-8daa9ca40567",
+    "createdByName": {
+      "id": "52e2b78e-1960-57d6-b606-8daa9ca40567",
+      "userName": "t01-admin@t.test",
+      "email": "t01-admin@t.test",
+      "fullName": "t01-admin",
+      "isActive": false
+    },
+    "updatedByName": {
+      "id": "52e2b78e-1960-57d6-b606-8daa9ca40567",
+      "userName": "t01-admin@t.test",
+      "email": "t01-admin@t.test",
+      "fullName": "t01-admin",
+      "isActive": false
+    }
+  }
+]

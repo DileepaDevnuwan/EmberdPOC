@@ -1,0 +1,131 @@
+{
+  "Role/Admin": {
+    "dashboards": [],
+    "datasets": []
+  },
+  "Role/Manager": {
+    "dashboards": [
+      {
+        "dashboardId": "d3e6dc16-0a4c-4f7a-b05b-a00131802c0e",
+        "name": "222",
+        "grant": "111111",
+        "isOwner": true,
+        "canGrant": true
+      },
+      {
+        "dashboardId": "abf97efa-dd14-49e2-a3cf-dd1ae1ca550a",
+        "name": "Inventory",
+        "grant": "111101",
+        "isOwner": true,
+        "canGrant": true
+      }
+    ],
+    "datasets": [
+      {
+        "datasetDefinitionId": "15a65029-af5a-4b54-826c-354551e0b1de",
+        "name": "2gfh",
+        "level": 0,
+        "rowRuleColumn": null,
+        "rowRuleAttribute": null,
+        "hiddenColumns": [
+          "BalanceAmount"
+        ],
+        "canManage": true
+      },
+      {
+        "datasetDefinitionId": "b132dccc-2104-47ec-8dfd-84a0bdfefa33",
+        "name": "Inventry",
+        "level": 0,
+        "rowRuleColumn": null,
+        "rowRuleAttribute": null,
+        "hiddenColumns": [
+          "NetAmount"
+        ],
+        "canManage": true
+      }
+    ]
+  },
+  "User/admin": {
+    "dashboards": [],
+    "datasets": []
+  },
+  "User/dileepa": {
+    "dashboards": [],
+    "datasets": []
+  },
+  "Role/SalesManager": {
+    "dashboards": [
+      {
+        "dashboardId": "c2564298-418d-41cb-8da3-03e9b3c36495",
+        "grant": "111111",
+        "name": "333",
+        "isOwner": true,
+        "canGrant": true
+      },
+      {
+        "dashboardId": "acdebbd1-0db0-4b5c-b3f8-1c9fc9b50e4a",
+        "grant": "111101",
+        "name": "fdgf",
+        "isOwner": true,
+        "canGrant": true
+      }
+    ],
+    "datasets": [
+      {
+        "datasetDefinitionId": "b132dccc-2104-47ec-8dfd-84a0bdfefa33",
+        "level": 0,
+        "hiddenColumns": [
+          "TotalAmount"
+        ],
+        "name": "Inventry",
+        "canManage": true
+      }
+    ]
+  },
+  "Role/HREmployee": {
+    "dashboards": [],
+    "datasets": []
+  },
+  "Role/HR_ADMIN": {
+    "dashboards": [
+      {
+        "dashboardId": "d3e6dc16-0a4c-4f7a-b05b-a00131802c0e",
+        "name": "222",
+        "grant": "111111",
+        "isOwner": true,
+        "canGrant": true
+      },
+      {
+        "dashboardId": "acdebbd1-0db0-4b5c-b3f8-1c9fc9b50e4a",
+        "name": "fdgf",
+        "grant": "111101",
+        "isOwner": true,
+        "canGrant": true
+      }
+    ],
+    "datasets": [
+      {
+        "datasetDefinitionId": "15a65029-af5a-4b54-826c-354551e0b1de",
+        "name": "2gfh",
+        "level": 0,
+        "rowRuleColumn": null,
+        "rowRuleAttribute": null,
+        "hiddenColumns": [
+          "BalanceAmount",
+          "Status",
+          "SubTotal"
+        ],
+        "canManage": true
+      },
+      {
+        "datasetDefinitionId": "668307b5-cec7-4dd2-a9c2-ed39023add26",
+        "name": "fdgfdg",
+        "level": 0,
+        "rowRuleColumn": null,
+        "rowRuleAttribute": null,
+        "hiddenColumns": [],
+        "canManage": true
+      }
+    ]
+  }
+}

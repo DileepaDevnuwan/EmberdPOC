@@ -1,0 +1,166 @@
+{
+  "abf97efa-dd14-49e2-a3cf-dd1ae1ca550a": [
+    {
+      "filterName": "Date",
+      "displayName": "Date",
+      "filterBehavior": "daterange",
+      "valueType": 3,
+      "resolvedDefaultValue": {
+        "from": "2025-11-10",
+        "to": "2026-11-09"
+      },
+      "dropdownDatasetId": null,
+      "dropdownSqlQuery": null,
+      "displayOrder": 0,
+      "renderMode": "both",
+      "quickPresetsJson": "[{\"key\":\"today\",\"label\":\"Today\",\"preset\":\"today\",\"color\":\"#6a5148\",\"selectedColor\":\"#f2d364\"},{\"key\":\"last_7_days\",\"label\":\"Last 7 days\",\"preset\":\"last_7_days\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_30_days\",\"label\":\"Last 30 days\",\"preset\":\"last_30_days\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_3_months\",\"label\":\"Last 3 months\",\"preset\":\"last_3_months\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_12_months\",\"label\":\"Last 12 months\",\"preset\":\"last_12_months\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"ytd\",\"label\":\"Year to date\",\"preset\":\"ytd\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"qtd\",\"label\":\"Quarter to date\",\"preset\":\"qtd\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_quarter\",\"label\":\"Last quarter\",\"preset\":\"last_quarter\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"}]",
+      "defaultPreset": "last_12_months",
+      "filterId": "0fdd03f8-c494-4653-b367-e54c566366f1"
+    },
+    {
+      "filterName": "country",
+      "displayName": "country",
+      "filterBehavior": "dropdown",
+      "valueType": 4,
+      "resolvedDefaultValue": null,
+      "dropdownDatasetId": "15a65029-af5a-4b54-826c-354551e0b1de",
+      "dropdownSqlQuery": null,
+      "displayOrder": 1,
+      "renderMode": null,
+      "quickPresetsJson": null,
+      "defaultPreset": null,
+      "filterId": "bb53a2a3-dacc-4ac3-9c0b-f9af5e157063"
+    }
+  ],
+  "c2564298-418d-41cb-8da3-03e9b3c36495": [
+    {
+      "filterName": "Date",
+      "displayName": "Date",
+      "filterBehavior": "daterange",
+      "valueType": 3,
+      "resolvedDefaultValue": {
+        "from": "2025-11-10",
+        "to": "2026-11-09"
+      },
+      "dropdownDatasetId": null,
+      "dropdownSqlQuery": null,
+      "displayOrder": 0,
+      "renderMode": "both",
+      "quickPresetsJson": "[{\"key\":\"today\",\"label\":\"Today\",\"preset\":\"today\",\"color\":\"#6a5148\",\"selectedColor\":\"#f2d364\"},{\"key\":\"last_7_days\",\"label\":\"Last 7 days\",\"preset\":\"last_7_days\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_30_days\",\"label\":\"Last 30 days\",\"preset\":\"last_30_days\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_3_months\",\"label\":\"Last 3 months\",\"preset\":\"last_3_months\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_12_months\",\"label\":\"Last 12 months\",\"preset\":\"last_12_months\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"ytd\",\"label\":\"Year to date\",\"preset\":\"ytd\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"qtd\",\"label\":\"Quarter to date\",\"preset\":\"qtd\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_quarter\",\"label\":\"Last quarter\",\"preset\":\"last_quarter\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"}]",
+      "defaultPreset": "last_12_months",
+      "filterId": "0fdd03f8-c494-4653-b367-e54c566366f1"
+    },
+    {
+      "filterName": "country",
+      "displayName": "country",
+      "filterBehavior": "dropdown",
+      "valueType": 4,
+      "resolvedDefaultValue": null,
+      "dropdownDatasetId": "15a65029-af5a-4b54-826c-354551e0b1de",
+      "dropdownSqlQuery": null,
+      "displayOrder": 1,
+      "renderMode": null,
+      "quickPresetsJson": null,
+      "defaultPreset": null,
+      "filterId": "bb53a2a3-dacc-4ac3-9c0b-f9af5e157063"
+    }
+  ],
+  "d3e6dc16-0a4c-4f7a-b05b-a00131802c0e": [
+    {
+      "filterName": "Date",
+      "displayName": "Date",
+      "filterBehavior": "daterange",
+      "valueType": 3,
+      "resolvedDefaultValue": {
+        "from": "2025-11-10",
+        "to": "2026-11-09"
+      },
+      "dropdownDatasetId": null,
+      "dropdownSqlQuery": null,
+      "displayOrder": 0,
+      "renderMode": "both",
+      "quickPresetsJson": "[{\"key\":\"today\",\"label\":\"Today\",\"preset\":\"today\",\"color\":\"#6a5148\",\"selectedColor\":\"#f2d364\"},{\"key\":\"last_7_days\",\"label\":\"Last 7 days\",\"preset\":\"last_7_days\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_30_days\",\"label\":\"Last 30 days\",\"preset\":\"last_30_days\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_3_months\",\"label\":\"Last 3 months\",\"preset\":\"last_3_months\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_12_months\",\"label\":\"Last 12 months\",\"preset\":\"last_12_months\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"ytd\",\"label\":\"Year to date\",\"preset\":\"ytd\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"qtd\",\"label\":\"Quarter to date\",\"preset\":\"qtd\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_quarter\",\"label\":\"Last quarter\",\"preset\":\"last_quarter\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"}]",
+      "defaultPreset": "last_12_months",
+      "filterId": "0fdd03f8-c494-4653-b367-e54c566366f1"
+    },
+    {
+      "filterName": "country",
+      "displayName": "country",
+      "filterBehavior": "dropdown",
+      "valueType": 4,
+      "resolvedDefaultValue": null,
+      "dropdownDatasetId": "15a65029-af5a-4b54-826c-354551e0b1de",
+      "dropdownSqlQuery": null,
+      "displayOrder": 1,
+      "renderMode": null,
+      "quickPresetsJson": null,
+      "defaultPreset": null,
+      "filterId": "bb53a2a3-dacc-4ac3-9c0b-f9af5e157063"
+    }
+  ],
+  "acdebbd1-0db0-4b5c-b3f8-1c9fc9b50e4a": [
+    {
+      "filterName": "Date",
+      "displayName": "Date",
+      "filterBehavior": "daterange",
+      "valueType": 3,
+      "resolvedDefaultValue": {
+        "from": "2025-11-10",
+        "to": "2026-11-09"
+      },
+      "dropdownDatasetId": null,
+      "dropdownSqlQuery": null,
+      "displayOrder": 0,
+      "renderMode": "both",
+      "quickPresetsJson": "[{\"key\":\"today\",\"label\":\"Today\",\"preset\":\"today\",\"color\":\"#6a5148\",\"selectedColor\":\"#f2d364\"},{\"key\":\"last_7_days\",\"label\":\"Last 7 days\",\"preset\":\"last_7_days\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_30_days\",\"label\":\"Last 30 days\",\"preset\":\"last_30_days\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_3_months\",\"label\":\"Last 3 months\",\"preset\":\"last_3_months\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_12_months\",\"label\":\"Last 12 months\",\"preset\":\"last_12_months\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"ytd\",\"label\":\"Year to date\",\"preset\":\"ytd\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"qtd\",\"label\":\"Quarter to date\",\"preset\":\"qtd\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_quarter\",\"label\":\"Last quarter\",\"preset\":\"last_quarter\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"}]",
+      "defaultPreset": "last_12_months",
+      "filterId": "0fdd03f8-c494-4653-b367-e54c566366f1"
+    },
+    {
+      "filterName": "country",
+      "displayName": "country",
+      "filterBehavior": "dropdown",
+      "valueType": 4,
+      "resolvedDefaultValue": null,
+      "dropdownDatasetId": "15a65029-af5a-4b54-826c-354551e0b1de",
+      "dropdownSqlQuery": null,
+      "displayOrder": 1,
+      "renderMode": null,
+      "quickPresetsJson": null,
+      "defaultPreset": null,
+      "filterId": "bb53a2a3-dacc-4ac3-9c0b-f9af5e157063"
+    }
+  ],
+  "68083b6b-95d6-4a27-96fc-7d3de3893b17": [
+    {
+      "filterId": "0fdd03f8-c494-4653-b367-e54c566366f1",
+      "filterName": "Date",
+      "displayName": "Date",
+      "valueType": 3,
+      "filterBehavior": null,
+      "renderMode": "both",
+      "defaultPreset": "last_12_months",
+      "quickPresetsJson": "[{\"key\":\"today\",\"label\":\"Today\",\"preset\":\"today\",\"color\":\"#6a5148\",\"selectedColor\":\"#f2d364\"},{\"key\":\"last_7_days\",\"label\":\"Last 7 days\",\"preset\":\"last_7_days\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_30_days\",\"label\":\"Last 30 days\",\"preset\":\"last_30_days\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_3_months\",\"label\":\"Last 3 months\",\"preset\":\"last_3_months\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_12_months\",\"label\":\"Last 12 months\",\"preset\":\"last_12_months\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"ytd\",\"label\":\"Year to date\",\"preset\":\"ytd\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"qtd\",\"label\":\"Quarter to date\",\"preset\":\"qtd\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_quarter\",\"label\":\"Last quarter\",\"preset\":\"last_quarter\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"}]",
+      "dropdownDatasetId": null,
+      "dropdownSqlQuery": null,
+      "resolvedDefaultValue": null,
+      "displayOrder": 0
+    }
+  ],
+  "557811d6-d7f4-4efb-acf8-7472f7176b93": [
+    {
+      "filterId": "0fdd03f8-c494-4653-b367-e54c566366f1",
+      "filterName": "Date",
+      "displayName": "Date",
+      "valueType": 3,
+      "filterBehavior": null,
+      "renderMode": "both",
+      "defaultPreset": "last_12_months",
+      "quickPresetsJson": "[{\"key\":\"today\",\"label\":\"Today\",\"preset\":\"today\",\"color\":\"#6a5148\",\"selectedColor\":\"#f2d364\"},{\"key\":\"last_7_days\",\"label\":\"Last 7 days\",\"preset\":\"last_7_days\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_30_days\",\"label\":\"Last 30 days\",\"preset\":\"last_30_days\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_3_months\",\"label\":\"Last 3 months\",\"preset\":\"last_3_months\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_12_months\",\"label\":\"Last 12 months\",\"preset\":\"last_12_months\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"ytd\",\"label\":\"Year to date\",\"preset\":\"ytd\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"qtd\",\"label\":\"Quarter to date\",\"preset\":\"qtd\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"},{\"key\":\"last_quarter\",\"label\":\"Last quarter\",\"preset\":\"last_quarter\",\"color\":\"#475569\",\"selectedColor\":\"#6366f1\"}]",
+      "dropdownDatasetId": null,
+      "dropdownSqlQuery": null,
+      "resolvedDefaultValue": null,
+      "displayOrder": 0
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+# .NET
+bin/
+obj/
+*.user
+.vs/
+
+# Node / Angular / Next
+node_modules/
+dist/
+.angular/
+.next/
+out/
+*.tsbuildinfo
+
+# Local secrets (copy the *.example files)
+EmberdPOC.Api/appsettings.Development.json
+emberd-web/src/environments/secrets.ts
+.env*
+!.env.example
+
+# Hardcoded store runtime files
+EmberdPOC.Api/HardcodedData/request-log.jsonl
+EmberdPOC.Api/HardcodedData/export-files/
+EmberdPOC.Api/HardcodedData.bak-*/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/

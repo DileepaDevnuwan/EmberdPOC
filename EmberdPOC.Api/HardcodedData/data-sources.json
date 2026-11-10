@@ -1,0 +1,67 @@
+{
+  "list": [
+    {
+      "id": "97479007-8c46-448b-a385-547fbdc31174",
+      "name": "fdgdfg",
+      "type": 0,
+      "host": "localhost",
+      "database": "pasan",
+      "status": 0,
+      "lastTestedAt": null,
+      "usageCount": 2,
+      "isOwner": true
+    },
+    {
+      "id": "e1909cc3-511c-428f-910e-acc47f7857e7",
+      "name": "inventory",
+      "type": 0,
+      "host": "localhost",
+      "database": "EmberdPOC",
+      "status": 0,
+      "lastTestedAt": null,
+      "usageCount": 1,
+      "isOwner": true
+    }
+  ],
+  "details": {
+    "97479007-8c46-448b-a385-547fbdc31174": {
+      "id": "97479007-8c46-448b-a385-547fbdc31174",
+      "name": "fdgdfg",
+      "type": 0,
+      "host": "localhost",
+      "port": 5432,
+      "database": "pasan",
+      "username": "postgres",
+      "sslMode": 0,
+      "commandTimeoutSeconds": 300,
+      "rowLimit": 100000,
+      "hasPassword": true,
+      "status": 0,
+      "lastTestedAt": null,
+      "lastTestMessage": null,
+      "serverVersion": null,
+      "usageCount": 2,
+      "isOwner": true
+    },
+    "e1909cc3-511c-428f-910e-acc47f7857e7": {
+      "id": "e1909cc3-511c-428f-910e-acc47f7857e7",
+      "name": "inventory",
+      "type": 0,
+      "host": "localhost",
+      "port": 5432,
+      "database": "EmberdPOC",
+      "username": "postgres",
+      "sslMode": 0,
+      "commandTimeoutSeconds": 300,
+      "rowLimit": 100000,
+      "hasPassword": true,
+      "status": 0,
+      "lastTestedAt": null,
+      "lastTestMessage": null,
+      "serverVersion": null,
+      "usageCount": 1,
+      "isOwner": true
+    }
+  },
+  "permissions": {}
+}

@@ -1,0 +1,32 @@
+{
+  "hostingMode": "Shared",
+  "licenceId": "DL-DEV-T01-2",
+  "expiresAt": "2027-12-31T00:00:00+00:00",
+  "inGracePeriod": false,
+  "features": {
+    "builder": true,
+    "connectors": true,
+    "mySql": true,
+    "rowSecurity": true,
+    "export": true,
+    "ai": false,
+    "ososDatasets": false
+  },
+  "limits": {
+    "maxDashboards": 50,
+    "maxUsers": 200
+  },
+  "defaultModule": "SALES",
+  "modules": [
+    {
+      "code": "SALES",
+      "name": "Sales",
+      "isDefault": true
+    },
+    {
+      "code": "HR",
+      "name": "HR",
+      "isDefault": false
+    }
+  ]
+}

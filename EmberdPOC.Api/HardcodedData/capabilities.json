@@ -1,0 +1,10 @@
+{
+  "userId": "ca68ca58-ba98-51e7-ae34-a6c1b2ae3653",
+  "callType": "External",
+  "roles": [
+    "Admin"
+  ],
+  "capabilities": [
+    "TenantAdmin"
+  ]
+}

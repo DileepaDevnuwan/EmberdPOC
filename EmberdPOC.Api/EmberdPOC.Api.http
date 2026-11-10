@@ -1,0 +1,6 @@
+@EmberdPOC.Api_HostAddress = http://localhost:5032
+
+GET {{EmberdPOC.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

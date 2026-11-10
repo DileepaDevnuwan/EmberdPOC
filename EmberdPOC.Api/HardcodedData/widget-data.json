@@ -1,0 +1,432 @@
+{
+  "bbd66e85-6d13-415d-8f89-8ac5e424c78b": {
+    "rawRows": [],
+    "xyPayload": {
+      "labels": [
+        ""
+      ],
+      "values": [
+        28141347.55
+      ],
+      "kpi": 28141347.55
+    },
+    "slicePayload": null,
+    "seriesPayload": null,
+    "scatterPayload": null,
+    "radarPayload": null,
+    "heatmapPayload": null,
+    "treePayload": null,
+    "sankeyPayload": null,
+    "ohlcPayload": null,
+    "geoPayload": null,
+    "metadata": {
+      "dataShape": 0,
+      "totalRows": 1,
+      "executionMs": 113,
+      "drillLevel": 0,
+      "drillContext": [],
+      "pageNumber": 1,
+      "pageSize": 1,
+      "totalPages": 1,
+      "refreshIntervalSeconds": null,
+      "limitApplied": null,
+      "effectiveLimit": null,
+      "valueIsPercent": false,
+      "drillMode": 0,
+      "crossHierarchyContext": null
+    },
+    "metricMeta": null
+  },
+  "c82e0792-cefa-4a26-b1e4-fa4ee64c0859": {
+    "rawRows": [],
+    "xyPayload": {
+      "labels": [
+        "Khasab Imports",
+        "Masirah Supplies",
+        "Bahla Crafts",
+        "Qurum Lifestyle",
+        "Sur Marine",
+        "Ruwi Computers",
+        "Amerat Mobile",
+        "Buraimi Electronics",
+        "Namal ",
+        "Shinas Mart",
+        "Seeb Traders",
+        "Liwa Electronics",
+        "Mahinda",
+        "Al Noor Trading",
+        "Mirbat Retail",
+        "Ibri Stores",
+        "Haima Supplies",
+        "Gulf Office Supply",
+        "Bawshar Digital",
+        "Sohar Retail",
+        "Adam Retail",
+        "Dhank Market",
+        "Bidbid Home",
+        "Nizwa Home",
+        "Thumrait Stores",
+        "Salalah Mart",
+        "Taqah Traders",
+        "Muscat Electronics",
+        "Saham Fresh",
+        "Mudhaibi Traders",
+        "Rustaq Market",
+        "Jaalan Stores",
+        "Sumail Supplies",
+        "Yanqul Trading",
+        "Ibra Home Center",
+        "Duqm Logistics",
+        "Quriyat Mart",
+        "Suwaiq Outlet",
+        "Barka Hypermart",
+        "Khoud Furniture"
+      ],
+      "values": [
+        1090752.3,
+        868171,
+        865390.95,
+        830198.75,
+        808036.25,
+        798367.65,
+        797399.5,
+        786143.85,
+        779584.55,
+        779462.85,
+        770466.95,
+        768366.25,
+        745243.05,
+        737736.1,
+        735489.85,
+        734128.4,
+        729138.3,
+        723998.25,
+        718869.7,
+        706739.55,
+        695903.5,
+        691655,
+        681097.2,
+        673882.6,
+        666159.9,
+        664584.1,
+        660798.4,
+        631578.85,
+        623103.05,
+        615655.5,
+        615497.5,
+        612074.65,
+        608294.6,
+        602331.95,
+        586034.8,
+        582490.3,
+        575359.5,
+        557654.2,
+        518435.2,
+        505072.7
+      ],
+      "kpi": 28141347.55
+    },
+    "slicePayload": null,
+    "seriesPayload": null,
+    "scatterPayload": null,
+    "radarPayload": null,
+    "heatmapPayload": null,
+    "treePayload": null,
+    "sankeyPayload": null,
+    "ohlcPayload": null,
+    "geoPayload": null,
+    "metadata": {
+      "dataShape": 0,
+      "totalRows": 40,
+      "executionMs": 17,
+      "drillLevel": 0,
+      "drillContext": [],
+      "pageNumber": 1,
+      "pageSize": 40,
+      "totalPages": 1,
+      "refreshIntervalSeconds": null,
+      "limitApplied": 1000,
+      "effectiveLimit": 1000,
+      "valueIsPercent": false,
+      "drillMode": 0,
+      "crossHierarchyContext": null
+    },
+    "metricMeta": null
+  },
+  "d5b5cbfb-e4d0-4d15-9c2b-3f84b4b688d0": {
+    "rawRows": [],
+    "xyPayload": {
+      "labels": [
+        "COMP001",
+        "COMP002",
+        "COMP003"
+      ],
+      "values": [
+        42908480530.1474,
+        42750174501.3939,
+        42693811892.3359
+      ],
+      "kpi": 128352466923.8772
+    },
+    "slicePayload": null,
+    "seriesPayload": null,
+    "scatterPayload": null,
+    "radarPayload": null,
+    "heatmapPayload": null,
+    "treePayload": null,
+    "sankeyPayload": null,
+    "ohlcPayload": null,
+    "geoPayload": null,
+    "metadata": {
+      "dataShape": 0,
+      "totalRows": 3,
+      "executionMs": 663,
+      "drillLevel": 0,
+      "drillContext": [],
+      "pageNumber": 1,
+      "pageSize": 3,
+      "totalPages": 1,
+      "refreshIntervalSeconds": null,
+      "limitApplied": 1000,
+      "effectiveLimit": 1000,
+      "valueIsPercent": false,
+      "drillMode": 0,
+      "crossHierarchyContext": null
+    },
+    "metricMeta": null
+  },
+  "d81d4fec-d932-4f32-a956-52d9b86b5dbb": {
+    "rawRows": [],
+    "xyPayload": {
+      "labels": [
+        ""
+      ],
+      "values": [
+        128352466923.8772
+      ],
+      "kpi": 128352466923.8772
+    },
+    "slicePayload": null,
+    "seriesPayload": null,
+    "scatterPayload": null,
+    "radarPayload": null,
+    "heatmapPayload": null,
+    "treePayload": null,
+    "sankeyPayload": null,
+    "ohlcPayload": null,
+    "geoPayload": null,
+    "metadata": {
+      "dataShape": 0,
+      "totalRows": 1,
+      "executionMs": 266,
+      "drillLevel": 0,
+      "drillContext": [],
+      "pageNumber": 1,
+      "pageSize": 1,
+      "totalPages": 1,
+      "refreshIntervalSeconds": null,
+      "limitApplied": null,
+      "effectiveLimit": null,
+      "valueIsPercent": false,
+      "drillMode": 0,
+      "crossHierarchyContext": null
+    },
+    "metricMeta": null
+  },
+  "5be3e5ed-af24-4561-92c0-c3f7b09def16": {
+    "rawRows": [],
+    "xyPayload": {
+      "labels": [
+        ""
+      ],
+      "values": [
+        64337347817.4872
+      ],
+      "kpi": 64337347817.4872
+    },
+    "slicePayload": null,
+    "seriesPayload": null,
+    "scatterPayload": null,
+    "radarPayload": null,
+    "heatmapPayload": null,
+    "treePayload": null,
+    "sankeyPayload": null,
+    "ohlcPayload": null,
+    "geoPayload": null,
+    "metadata": {
+      "dataShape": 0,
+      "totalRows": 1,
+      "executionMs": 213,
+      "drillLevel": 0,
+      "drillContext": [],
+      "pageNumber": 1,
+      "pageSize": 1,
+      "totalPages": 1,
+      "refreshIntervalSeconds": null,
+      "limitApplied": null,
+      "effectiveLimit": null,
+      "valueIsPercent": false,
+      "drillMode": 0,
+      "crossHierarchyContext": null
+    },
+    "metricMeta": null
+  },
+  "83faea9c-f9e9-42fa-b35e-ca7507b04384": {
+    "rawRows": [],
+    "xyPayload": {
+      "labels": [
+        "Alpha Traders (Pvt) Ltd",
+        "Beta Distributors Ltd",
+        "Gamma Retail Group"
+      ],
+      "values": [
+        42908480530.1474,
+        42750174501.3939,
+        42693811892.3359
+      ],
+      "kpi": 128352466923.8772
+    },
+    "slicePayload": null,
+    "seriesPayload": null,
+    "scatterPayload": null,
+    "radarPayload": null,
+    "heatmapPayload": null,
+    "treePayload": null,
+    "sankeyPayload": null,
+    "ohlcPayload": null,
+    "geoPayload": null,
+    "metadata": {
+      "dataShape": 0,
+      "totalRows": 3,
+      "executionMs": 287,
+      "drillLevel": 0,
+      "drillContext": [],
+      "pageNumber": 1,
+      "pageSize": 3,
+      "totalPages": 1,
+      "refreshIntervalSeconds": null,
+      "limitApplied": 1000,
+      "effectiveLimit": 1000,
+      "valueIsPercent": false,
+      "drillMode": 0,
+      "crossHierarchyContext": null
+    },
+    "metricMeta": null
+  },
+  "9be77232-10b3-4497-a65e-70991a4ef654": {
+    "rawRows": [],
+    "xyPayload": {
+      "labels": [
+        "India",
+        "Sri Lanka"
+      ],
+      "values": [
+        64337347817.4872,
+        64015119106.39
+      ],
+      "kpi": 128352466923.8772
+    },
+    "slicePayload": null,
+    "seriesPayload": null,
+    "scatterPayload": null,
+    "radarPayload": null,
+    "heatmapPayload": null,
+    "treePayload": null,
+    "sankeyPayload": null,
+    "ohlcPayload": null,
+    "geoPayload": null,
+    "metadata": {
+      "dataShape": 0,
+      "totalRows": 2,
+      "executionMs": 324,
+      "drillLevel": 0,
+      "drillContext": [],
+      "pageNumber": 1,
+      "pageSize": 2,
+      "totalPages": 1,
+      "refreshIntervalSeconds": null,
+      "limitApplied": 1000,
+      "effectiveLimit": 1000,
+      "valueIsPercent": false,
+      "drillMode": 0,
+      "crossHierarchyContext": null
+    },
+    "metricMeta": null
+  },
+  "ade381b3-b63b-4ef2-9b35-c72d938787f5": {
+    "rawRows": [],
+    "xyPayload": {
+      "labels": [
+        ""
+      ],
+      "values": [
+        128352466923.8772
+      ],
+      "kpi": 128352466923.8772
+    },
+    "slicePayload": null,
+    "seriesPayload": null,
+    "scatterPayload": null,
+    "radarPayload": null,
+    "heatmapPayload": null,
+    "treePayload": null,
+    "sankeyPayload": null,
+    "ohlcPayload": null,
+    "geoPayload": null,
+    "metadata": {
+      "dataShape": 0,
+      "totalRows": 1,
+      "executionMs": 247,
+      "drillLevel": 0,
+      "drillContext": [],
+      "pageNumber": 1,
+      "pageSize": 1,
+      "totalPages": 1,
+      "refreshIntervalSeconds": null,
+      "limitApplied": null,
+      "effectiveLimit": null,
+      "valueIsPercent": false,
+      "drillMode": 0,
+      "crossHierarchyContext": null
+    },
+    "metricMeta": null
+  },
+  "a8c83636-6482-41c3-8a29-c0f1836f03e9": {
+    "rawRows": [],
+    "xyPayload": {
+      "labels": [
+        ""
+      ],
+      "values": [
+        4
+      ],
+      "kpi": 4
+    },
+    "slicePayload": null,
+    "seriesPayload": null,
+    "scatterPayload": null,
+    "radarPayload": null,
+    "heatmapPayload": null,
+    "treePayload": null,
+    "sankeyPayload": null,
+    "ohlcPayload": null,
+    "geoPayload": null,
+    "metadata": {
+      "dataShape": 0,
+      "totalRows": 1,
+      "executionMs": 150,
+      "drillLevel": 0,
+      "drillContext": [],
+      "pageNumber": 1,
+      "pageSize": 1,
+      "totalPages": 1,
+      "refreshIntervalSeconds": null,
+      "limitApplied": 1000,
+      "effectiveLimit": 1000,
+      "valueIsPercent": false,
+      "drillMode": 0,
+      "crossHierarchyContext": null
+    },
+    "metricMeta": null
+  }
+}

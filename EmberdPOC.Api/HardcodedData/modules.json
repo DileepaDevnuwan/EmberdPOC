@@ -1,0 +1,16 @@
+[
+  {
+    "code": "SALES",
+    "name": "Sales",
+    "isDefault": true,
+    "isActive": true,
+    "sortOrder": 0
+  },
+  {
+    "code": "HR",
+    "name": "HR",
+    "isDefault": false,
+    "isActive": true,
+    "sortOrder": 1
+  }
+]

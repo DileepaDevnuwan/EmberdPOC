@@ -1,11 +1,12 @@
 'use client';
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { MENUS } from '@/lib/client';
 
 const GROUPS = [
   { mode: 'live', label: 'Live', hint: 'Dashboard.Web :5150' },
   { mode: 'hardcoded', label: 'Hardcoded', hint: 'POC JSON store :5300' },
+  { mode: 'remote', label: 'java01 (bundle)', hint: 'public/osos-dashboard' },
+  { mode: 'remote-npm', label: 'java01 (npm)', hint: '@osos-dashboard/elements' },
 ] as const;
 
 export function Sidebar() {
@@ -21,9 +22,9 @@ export function Sidebar() {
           {MENUS.map(m => {
             const href = `/${g.mode}/${m.slug}`;
             return (
-              <Link key={href} href={href} className={path === href ? 'active' : undefined}>
+              <a key={href} href={href} className={path === href ? 'active' : undefined}>
                 {m.label}
-              </Link>
+              </a>
             );
           })}
         </div>

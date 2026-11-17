@@ -27,7 +27,7 @@
     "@ngrx/store": "^22.0.1",
     "@ngx-translate/core": "^15.0.0",
     "@ngx-translate/http-loader": "^8.0.0",
-    "@osos-dashboard/ui": "21.0.5",
+    "@osos-dashboard/ui": "21.0.6",
     "@osos/core": "21.0.4",
     "@osos/shared-components": "21.0.4",
     "@osos/shared-directives": "21.0.4",

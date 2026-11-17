@@ -1,0 +1,16 @@
+<header class="page-head">
+  <h1>Data sources</h1>
+</header>
+<p class="error" *ngIf="error">{{ error }}</p>
+<div class="element-host">
+  <osos-data-sources *ngIf="ready"
+    [dataSources]="dataSources"
+    [features]="features"
+    [isLoading]="loading"
+    [testingId]="testingId"
+    (connectorRequest)="onConnectorRequest($event.detail)"
+    (saved)="load()"
+    (testConnection)="onTestConnection($event.detail)"
+    (deleteDataSource)="onDeleteDataSource($event.detail)">
+  </osos-data-sources>
+</div>

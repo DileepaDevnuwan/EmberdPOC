@@ -52,10 +52,29 @@ export function DashboardsMenu({ mode }: { mode: Mode }) {
     created: (id: string) => setView({ kind: 'builder', id, dashboardMode: 'update' }),
   };
 
-  const add = () => {
+  const add = async () => {
     const el = listEl.current;
-    if (el && typeof el.openAddDialog === 'function') el.openAddDialog();
-    else setView({ kind: 'builder', dashboardMode: 'create' });
+    if (el && typeof el.openAddDialog === 'function') {
+      el.openAddDialog();
+      return;
+    }
+    const name = prompt('Dashboard name', 'New dashboard');
+    if (!name?.trim()) return;
+    try {
+      const id = await api<string>(mode, '/dashboard', 'POST', {
+        code: `DB_${Date.now()}`,
+        name: name.trim(),
+        description: null,
+        moduleCode: 'SALES',
+        isShared: false,
+        isDefault: false,
+        tags: null,
+        status: 0,
+      });
+      setView({ kind: 'builder', id, dashboardMode: 'update' });
+    } catch (e) {
+      setError(String(e));
+    }
   };
 
   const viewerProps = useMemo(

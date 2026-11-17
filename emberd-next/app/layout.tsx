@@ -11,10 +11,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <head>
-        {/* The OSOS Dashboard Web Components bundle, loaded once for every page. */}
-        {/* eslint-disable-next-line @next/next/no-css-tags */}
-        <link rel="stylesheet" href="/osos-dashboard/styles.css" />
-        <script type="module" src="/osos-dashboard/main.js" async />
       </head>
       <body>
         <div className="shell">

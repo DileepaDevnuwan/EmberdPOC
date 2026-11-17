@@ -1,0 +1,10 @@
+<header class="page-head">
+  <h1>Dashboards / New</h1>
+  <button (click)="back()">Back to list</button>
+</header>
+<div class="element-host">
+  <osos-create-dashboard *ngIf="ready"
+    (created)="design($event.detail)"
+    (cancelled)="back()">
+  </osos-create-dashboard>
+</div>

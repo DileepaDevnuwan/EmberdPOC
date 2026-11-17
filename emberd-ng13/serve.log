@@ -1,0 +1,79 @@
+- Generating browser application bundles (phase: setup)...
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files   | Names         |      Size
+vendor.js             | vendor        |   2.28 MB
+polyfills.js          | polyfills     | 397.40 kB
+styles.css, styles.js | styles        | 277.99 kB
+main.js               | main          | 113.81 kB
+runtime.js            | runtime       |   6.86 kB
+
+| Initial Total |   3.05 MB
+
+Build at: 2026-11-17T04:10:38.338Z - Hash: d6702c591ebefe1c - Time: 8504ms
+
+** Angular Live Development Server is listening on localhost:4413, open your browser on http://localhost:4413/ **
+
+
+√ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   |    Size
+runtime.js          | runtime | 6.86 kB
+
+4 unchanged chunks
+
+Build at: 2026-11-17T04:12:33.563Z - Hash: 225431d123db713e - Time: 373ms
+
+√ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   |    Size
+runtime.js          | runtime | 6.86 kB
+
+4 unchanged chunks
+
+Build at: 2026-11-17T04:12:55.677Z - Hash: d6702c591ebefe1c - Time: 192ms
+
+√ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   |    Size
+runtime.js          | runtime | 6.86 kB
+
+4 unchanged chunks
+
+Build at: 2026-11-17T04:19:23.999Z - Hash: 7a8c17f9987248ef - Time: 229ms
+
+√ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+5 unchanged chunks
+
+Build at: 2026-11-17T04:24:20.267Z - Hash: 7a8c17f9987248ef - Time: 2242ms
+
+√ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+5 unchanged chunks
+
+Build at: 2026-11-17T04:32:46.103Z - Hash: 7a8c17f9987248ef - Time: 369ms
+
+√ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+5 unchanged chunks
+
+Build at: 2026-11-17T04:32:46.819Z - Hash: 7a8c17f9987248ef - Time: 255ms
+
+√ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names   |    Size
+runtime.js          | runtime | 6.86 kB
+
+4 unchanged chunks
+
+Build at: 2026-11-17T04:41:20.566Z - Hash: 71772fde07b9c176 - Time: 1707ms
+
+√ Compiled successfully.

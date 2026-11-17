@@ -1,0 +1,16 @@
+<header class="page-head">
+  <h1>Access</h1>
+</header>
+<p class="error" *ngIf="error">{{ error }}</p>
+<div class="element-host">
+  <osos-access *ngIf="ready"
+    [principals]="principals"
+    [access]="access"
+    [loading]="loading"
+    (principalSelected)="load($event.detail)"
+    (save)="onSave($event.detail)"
+    (dashboardOptionsRequest)="answerOptions('/dashboard/all', $event.detail)"
+    (datasetOptionsRequest)="answerOptions('/dashboard-datasets', $event.detail)"
+    (datasetFieldsRequest)="answerDatasetFields($event.detail)">
+  </osos-access>
+</div>

@@ -1,0 +1,14 @@
+<header class="page-head">
+  <h1>Hierarchies / {{ id ? 'Edit' : 'New' }}</h1>
+  <button (click)="back()">Back to list</button>
+</header>
+<p class="error" *ngIf="error">{{ error }}</p>
+<div class="element-host">
+  <osos-hierarchy-form *ngIf="ready"
+    [attr.mode]="mode"
+    [attr.hierarchy-id]="id"
+    (saved)="back()"
+    (cancelled)="back()"
+    (failed)="onFailed($event.detail)">
+  </osos-hierarchy-form>
+</div>

@@ -54,7 +54,7 @@ export class DatasetFormHostComponent extends FormHostBase {
   }
 
   save(dataset: DashboardDataset): void {
-    const request = buildSaveDatasetRequest(dataset, { isNew: this.isNew, connectorsEnabled: true });
+    const request = buildSaveDatasetRequest(dataset, { isNew: this.isNew, connectorsEnabled: true, isExternal: true });
     this.api
       .saveDataset(request)
       .pipe(takeUntilDestroyed(this.destroyRef))

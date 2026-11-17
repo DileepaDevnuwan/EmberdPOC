@@ -1,0 +1,13 @@
+{
+  "name": "@osos/dashboard-js",
+  "version": "21.1.0",
+  "main": "main.js",
+  "files": [
+    "*.js",
+    "*.css",
+    "media/**",
+    "assets/**",
+    "3rdpartylicenses.txt"
+  ],
+  "sideEffects": true
+}

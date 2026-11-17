@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import type { CrudConfig } from './CrudMenu';
-import { api, isEmptyId, OE, type Mode } from '@/lib/client';
+import { answerConnector, api, isEmptyId, OE, type Mode } from '@/lib/client';
 
 const HIERARCHIES = '/dashboard/semantic/hierarchies';
 
@@ -10,6 +10,14 @@ async function datasetOptions(mode: Mode) {
 }
 
 /** The form's `{ args, reply }` outputs we can answer from the API; unknown ones are logged. */
+const dropdownOptionsPath = (datasetId: string, args: any) => {
+  const { valueField, labelField, skip = 0, take = 20 } = args ?? {};
+  const query = [`skip=${skip}`, `take=${take}`];
+  if (valueField) query.push(`valueField=${encodeURIComponent(valueField)}`);
+  if (labelField) query.push(`labelField=${encodeURIComponent(labelField)}`);
+  return `/dashboard-datasets/${datasetId}/dropdown-options?${query.join('&')}`;
+};
+
 function logRequest(name: string) {
   return (detail: any) => console.info(`[host] ${name} (not handled in this demo)`, detail?.args);
 }
@@ -28,7 +36,7 @@ export const datasetConfig: CrudConfig = {
   formExtras: async mode => ({
     sourceDatasets: (await datasetOptions(mode)).map(d => ({ id: d.id, name: d.name, code: d.code })),
   }),
-  formRequests: () => ({ connectorRequest: logRequest('connectorRequest') }),
+  formRequests: mode => ({ connectorRequest: (detail: any) => answerConnector(mode, detail) }),
 };
 
 export const filterConfig: CrudConfig = {
@@ -43,9 +51,15 @@ export const filterConfig: CrudConfig = {
   mapRow: raw => ({ ...raw, ...OE().fromApi.filter(raw) }),
   save: (_mode, model, isNew) => OE().save.filter(model, isNew || isEmptyId(model.id)),
   formExtras: async mode => ({ datasets: await datasetOptions(mode) }),
-  formRequests: () => ({
-    loadPreview: logRequest('loadPreview'),
-    previewPageRequest: logRequest('previewPageRequest'),
+  formRequests: mode => ({
+    loadPreview: (detail: any, el?: any) => {
+      if (!detail?.datasetId || !el) return;
+      void api(mode, `/dashboard-datasets/${detail.datasetId}`).then(json => (el.datasetFields = OE().fromApi.dataset(json).fields ?? []));
+    },
+    previewPageRequest: (detail: any) => {
+      const { datasetId, ...args } = detail?.args ?? {};
+      detail?.reply?.(datasetId ? api(mode, dropdownOptionsPath(datasetId, args)) : Promise.resolve({ items: [], hasMore: false }));
+    },
   }),
 };
 

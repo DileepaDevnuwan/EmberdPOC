@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { authGuard } from './core/guards/auth.guard';
 import { dashboardResolver } from './core/resolvers/dashboard.resolver';
-import { provideHardcodedDashboard } from './core/hardcoded/hardcoded.providers';
+import { provideHardcodedDashboard, REMOTE_BASE_URL } from './core/hardcoded/hardcoded.providers';
 
 /** The Dashboard configuration pages; mounted under /dashboard (live) and /hardcoded/dashboard. */
 function dashboardRoutes(): Routes {
@@ -67,6 +67,19 @@ export const routes: Routes = [
       { path: 'sales', loadComponent: () => import('./pages/sales/sales.component').then(m => m.SalesComponent) },
       { path: 'access', loadComponent: access },
       { path: 'dashboard', children: dashboardRoutes() },
+      {
+        path: 'remote',
+        providers: provideHardcodedDashboard(REMOTE_BASE_URL),
+        children: [
+          { path: 'insight-hub', loadComponent: insightHub, data: { hubApiPrefix: '/remote' } },
+          { path: 'access', loadComponent: access },
+          { path: 'dashboard', children: dashboardRoutes() },
+        ],
+      },
+      {
+        path: 'remote-bundle/:menu',
+        loadComponent: () => import('./pages/remote-bundle/remote-bundle-page.component').then(m => m.RemoteBundlePageComponent),
+      },
       {
         // Hardcoded mode: the same host pages, answered by the back end's JSON store.
         path: 'hardcoded',

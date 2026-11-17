@@ -1,17 +1,19 @@
 'use client';
+import { BundleLoader } from '@/components/BundleLoader';
 import { HostBridge } from '@/components/HostBridge';
 import { AccessMenu } from '@/components/menus/AccessMenu';
 import { CrudMenu } from '@/components/menus/CrudMenu';
 import { DashboardsMenu } from '@/components/menus/DashboardsMenu';
 import { InsightHubMenu } from '@/components/menus/InsightHubMenu';
 import { datasetConfig, filterConfig, hierarchyConfig } from '@/components/menus/configs';
-import type { Mode } from '@/lib/client';
+import { bundleBase, type Mode } from '@/lib/client';
 
 /** One menu of one nav group; `key` remounts everything when the mode or menu changes. */
 export function MenuPage({ mode, menu }: { mode: Mode; menu: string }) {
   const key = `${mode}-${menu}`;
   return (
     <>
+      <BundleLoader base={bundleBase(mode)} />
       <HostBridge mode={mode} />
       {menu === 'insight-hub' && <InsightHubMenu key={key} mode={mode} />}
       {menu === 'dashboards' && <DashboardsMenu key={key} mode={mode} />}

@@ -21,7 +21,7 @@ export type CrudConfig = {
   /** Extra form properties loaded once (e.g. datasets for the filter form). */
   formExtras?: (mode: Mode) => Promise<Record<string, unknown>>;
   /** Handlers for the form's `{ args, reply }` request outputs. */
-  formRequests?: (mode: Mode) => Record<string, (detail: any) => void>;
+  formRequests?: (mode: Mode) => Record<string, (detail: any, el?: any) => void>;
 };
 
 type View = { kind: 'list' } | { kind: 'form'; record: any; formMode: number; isNew: boolean };

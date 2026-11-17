@@ -1,0 +1,10 @@
+<header class="page-head">
+  <h1>Dashboards / View</h1>
+  <button (click)="back()">Back to list</button>
+</header>
+<div class="element-host">
+  <osos-dashboard-viewer *ngIf="ready"
+    [attr.dashboard-id]="id"
+    [embedded]="true">
+  </osos-dashboard-viewer>
+</div>

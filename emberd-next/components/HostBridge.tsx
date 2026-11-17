@@ -1,7 +1,7 @@
 'use client';
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect } from 'react';
-import type { Mode } from '@/lib/client';
+import { apiMode, type Mode } from '@/lib/client';
 
 /**
  * Answers every `osos-request` the Dashboard screens send by forwarding it to this app's back end
@@ -19,7 +19,7 @@ export function HostBridge({ mode }: { mode: Mode }) {
         init.body = JSON.stringify(body);
       }
       reply(
-        fetch(`/api/dash/${mode}${path}`, init).then(async res => {
+        fetch(`/api/dash/${apiMode(mode)}${path}`, init).then(async res => {
           if (!res.ok) {
             const text = await res.text().catch(() => '');
             console.warn(`[host] ${call} ${method} ${path} -> ${res.status}`, text.slice(0, 300));

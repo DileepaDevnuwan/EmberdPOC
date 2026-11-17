@@ -1,0 +1,13 @@
+<header class="page-head">
+  <h1>Dashboards / Design</h1>
+  <button (click)="back()">Back to list</button>
+</header>
+<div class="element-host">
+  <osos-dashboard-builder *ngIf="ready"
+    [attr.dashboard-id]="id"
+    [dashboardMode]="dashboardMode"
+    (closed)="back()"
+    (previewRequested)="preview($event.detail)"
+    (cloned)="design($event.detail)">
+  </osos-dashboard-builder>
+</div>

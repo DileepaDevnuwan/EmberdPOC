@@ -1,0 +1,33 @@
+:root {
+  --osos-primary: #130066;
+  --osos-primary-dark: #002e5d;
+  --osos-on-primary: #ffffff;
+  --osos-accent: var(--osos-primary);
+  --osos-font-family: 'Poppins', sans-serif;
+  --osos-font-size: 11px;
+  --osos-text: #202020;
+  --osos-text-secondary: #879392;
+  --osos-text-muted: #64748b;
+  --osos-background: #ffffff;
+  --osos-surface: #ffffff;
+  --osos-border: #eaeaea;
+  --osos-radius-sm: 4px;
+  --osos-radius-md: 20px;
+  --osos-radius-lg: 25px;
+  --osos-radius-pill: 100px;
+}
+
+button.primary {
+  background: var(--osos-primary);
+  border-color: var(--osos-primary);
+  color: var(--osos-on-primary);
+}
+
+button.primary:hover:not([disabled]) {
+  background: var(--osos-primary-dark);
+}
+
+.sidebar nav a.active {
+  background: var(--osos-primary);
+  color: var(--osos-on-primary);
+}

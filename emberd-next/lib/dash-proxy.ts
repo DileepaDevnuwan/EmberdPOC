@@ -6,17 +6,25 @@ const cache: Record<string, Cached | undefined> = {};
 
 const LIVE_BASE = process.env.DASH_LIVE_BASE ?? 'http://localhost:5150';
 const HARDCODED_BASE = process.env.DASH_HARDCODED_BASE ?? 'http://localhost:5300';
+const REMOTE_BASE = process.env.DASH_REMOTE_BASE ?? 'https://java01-dashboard.gears-int.com';
 
-async function liveToken(): Promise<string> {
-  const c = cache.live;
+type Target = { key: 'live' | 'remote'; base: string; clientId?: string; clientSecret?: string };
+
+const TARGETS: Record<'live' | 'remote', Target> = {
+  live: { key: 'live', base: LIVE_BASE, clientId: process.env.DASH_CLIENT_ID, clientSecret: process.env.DASH_CLIENT_SECRET },
+  remote: { key: 'remote', base: REMOTE_BASE, clientId: process.env.DASH_REMOTE_CLIENT_ID, clientSecret: process.env.DASH_REMOTE_CLIENT_SECRET },
+};
+
+async function dashboardToken(target: Target): Promise<string> {
+  const c = cache[target.key];
   if (c && c.expiresAt - 30_000 > Date.now()) return c.token;
-  const res = await fetch(`${LIVE_BASE}/api/v1/embed/token`, {
+  const res = await fetch(`${target.base}/api/v1/embed/token`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     cache: 'no-store',
     body: JSON.stringify({
-      clientId: process.env.DASH_CLIENT_ID ?? '',
-      clientSecret: process.env.DASH_CLIENT_SECRET ?? '',
+      clientId: target.clientId ?? '',
+      clientSecret: target.clientSecret ?? '',
       user: {
         // The live dashboards were made by the POC user 'admin' (owner-based visibility); set DASH_USER_ID=next-admin for a fresh user.
         id: process.env.DASH_USER_ID ?? 'admin',
@@ -30,7 +38,7 @@ async function liveToken(): Promise<string> {
   if (!res.ok) throw new Error(`Dashboard token request failed: ${res.status}`);
   const json = (await res.json()) as { token: string; expiresAt?: string };
   const expiresAt = json.expiresAt ? Date.parse(json.expiresAt) : Date.now() + 10 * 60_000;
-  cache.live = { token: json.token, expiresAt };
+  cache[target.key] = { token: json.token, expiresAt };
   return json.token;
 }
 
@@ -54,22 +62,23 @@ async function hardcodedToken(): Promise<string | undefined> {
   }
 }
 
-export type DashMode = 'live' | 'hardcoded';
+export type DashMode = 'live' | 'hardcoded' | 'remote';
 
 /** Forwards one browser request to the Dashboard embed API of the chosen mode. */
 export async function proxyDash(mode: DashMode, req: Request, path: string[]): Promise<Response> {
   const search = new URL(req.url).search;
   const sub = path.map(encodeURIComponent).join('/');
   const target =
-    mode === 'live'
-      ? `${LIVE_BASE}/api/v1/embed/${sub}${search}`
-      : `${HARDCODED_BASE}/hardcoded/api/v1/embed/${sub}${search}`;
+    mode === 'hardcoded'
+      ? `${HARDCODED_BASE}/hardcoded/api/v1/embed/${sub}${search}`
+      : `${TARGETS[mode].base}/api/v1/embed/${sub}${search}`;
 
   const headers: Record<string, string> = { Accept: req.headers.get('accept') ?? 'application/json' };
+  if (mode !== 'hardcoded' && process.env.DASH_PARAMETERS) headers['X-Dashboard-Parameters'] = process.env.DASH_PARAMETERS;
   const contentType = req.headers.get('content-type');
   if (contentType) headers['Content-Type'] = contentType;
   try {
-    const token = mode === 'live' ? await liveToken() : await hardcodedToken();
+    const token = mode === 'hardcoded' ? await hardcodedToken() : await dashboardToken(TARGETS[mode]);
     if (token) headers.Authorization = `Bearer ${token}`;
   } catch (e) {
     return Response.json({ error: String(e) }, { status: 502 });
@@ -87,7 +96,7 @@ export async function proxyDash(mode: DashMode, req: Request, path: string[]): P
   } catch (e) {
     return Response.json({ error: `Upstream unreachable: ${target}`, detail: String(e) }, { status: 502 });
   }
-  if (upstream.status === 401 && mode === 'live') cache.live = undefined;
+  if (upstream.status === 401 && mode !== 'hardcoded') cache[mode] = undefined;
 
   const out = new Headers();
   for (const h of ['content-type', 'content-disposition']) {

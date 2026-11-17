@@ -49,6 +49,32 @@ import { AuthService } from '../core/services/auth.service';
             <a routerLink="/hardcoded/access" routerLinkActive="active">Access</a>
           }
         </div>
+        <div class="nav-section">
+          <div class="nav-header" (click)="remoteNpmOpen.set(!remoteNpmOpen())">
+            java01 (npm) {{ remoteNpmOpen() ? '▾' : '▸' }}
+          </div>
+          @if (remoteNpmOpen()) {
+            <a routerLink="/remote/insight-hub" routerLinkActive="active">Insight Hub</a>
+            <a routerLink="/remote/dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Dashboard</a>
+            <a routerLink="/remote/dashboard/dataset" routerLinkActive="active">Dataset</a>
+            <a routerLink="/remote/dashboard/hierarchy" routerLinkActive="active">Hierarchy</a>
+            <a routerLink="/remote/dashboard/filter" routerLinkActive="active">Filtering</a>
+            <a routerLink="/remote/access" routerLinkActive="active">Access</a>
+          }
+        </div>
+        <div class="nav-section">
+          <div class="nav-header" (click)="remoteBundleOpen.set(!remoteBundleOpen())">
+            java01 (bundle) {{ remoteBundleOpen() ? '▾' : '▸' }}
+          </div>
+          @if (remoteBundleOpen()) {
+            <a routerLink="/remote-bundle/insight-hub" routerLinkActive="active">Insight Hub</a>
+            <a routerLink="/remote-bundle/dashboards" routerLinkActive="active">Dashboard</a>
+            <a routerLink="/remote-bundle/datasets" routerLinkActive="active">Dataset</a>
+            <a routerLink="/remote-bundle/hierarchies" routerLinkActive="active">Hierarchy</a>
+            <a routerLink="/remote-bundle/filters" routerLinkActive="active">Filtering</a>
+            <a routerLink="/remote-bundle/access" routerLinkActive="active">Access</a>
+          }
+        </div>
         <div class="spacer"></div>
         <div class="user-info">
           <span>{{ auth.user()?.fullName ?? 'User' }}</span>
@@ -83,4 +109,6 @@ export class LayoutComponent {
   readonly masterOpen = signal(true);
   readonly dashOpen = signal(true);
   readonly hardcodedOpen = signal(true);
+  readonly remoteNpmOpen = signal(true);
+  readonly remoteBundleOpen = signal(true);
 }

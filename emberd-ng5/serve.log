@@ -1,0 +1,33 @@
+** NG Live Development Server is listening on localhost:4405, open your browser on http://localhost:4405/ **
+[0mDate: [1m[37m2026-11-17T04:10:32.244Z[39m[22m[0m
+[0mHash: [1m[37m1856f089eaed176173f1[39m[22m[0m
+[0mTime: [1m[37m6698[39m[22mms[0m
+[0mchunk {[1m[33minline[39m[22m} [1m[32minline.bundle.js[39m[22m (inline) 3.85 kB [1m[33m[entry][39m[22m[1m[32m [rendered][39m[22m[0m
+[0mchunk {[1m[33mmain[39m[22m} [1m[32mmain.bundle.js[39m[22m (main) 188 kB [1m[33m[initial][39m[22m[1m[32m [rendered][39m[22m[0m
+[0mchunk {[1m[33mpolyfills[39m[22m} [1m[32mpolyfills.bundle.js[39m[22m (polyfills) 597 kB [1m[33m[initial][39m[22m[1m[32m [rendered][39m[22m[0m
+[0mchunk {[1m[33mstyles[39m[22m} [1m[32mstyles.bundle.js[39m[22m (styles) 60 kB [1m[33m[initial][39m[22m[1m[32m [rendered][39m[22m[0m
+[0mchunk {[1m[33mvendor[39m[22m} [1m[32mvendor.bundle.js[39m[22m (vendor) 9.6 MB [1m[33m[initial][39m[22m[1m[32m [rendered][39m[22m[0m
+
+webpack: Compiled successfully.
+webpack: Compiling...
+[0mDate: [1m[37m2026-11-17T04:15:01.468Z[39m[22m - Hash: [1m[37m2a29bfeb8f73e6f18aea[39m[22m - Time: [1m[37m258[39m[22mms[0m
+[0m4 unchanged chunks[0m
+[0mchunk {[1m[33mstyles[39m[22m} [1m[32mstyles.bundle.js[39m[22m (styles) 60 kB [1m[33m[initial][39m[22m[1m[32m [rendered][39m[22m[0m
+
+webpack: Compiled successfully.
+webpack: Compiling...
+[0mDate: [1m[37m2026-11-17T04:15:23.637Z[39m[22m - Hash: [1m[37m1856f089eaed176173f1[39m[22m - Time: [1m[37m160[39m[22mms[0m
+[0m4 unchanged chunks[0m
+[0mchunk {[1m[33mstyles[39m[22m} [1m[32mstyles.bundle.js[39m[22m (styles) 60 kB [1m[33m[initial][39m[22m[1m[32m [rendered][39m[22m[0m
+
+webpack: Compiled successfully.
+webpack: Compiling...
+[0mDate: [1m[37m2026-11-17T04:24:20.884Z[39m[22m - Hash: [1m[37m7b2808f2f586102f4e72[39m[22m - Time: [1m[37m2363[39m[22mms[0m
+[0m5 unchanged chunks[0m
+
+webpack: Compiled successfully.
+webpack: Compiling...
+[0mDate: [1m[37m2026-11-17T04:41:20.548Z[39m[22m - Hash: [1m[37m1856f089eaed176173f1[39m[22m - Time: [1m[37m1141[39m[22mms[0m
+[0m5 unchanged chunks[0m
+
+webpack: Compiled successfully.

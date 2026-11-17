@@ -1,12 +1,12 @@
 {
   "name": "@osos-dashboard/elements",
-  "version": "21.0.5",
-  "description": "OSOS Dashboard screens as framework-free Web Components (Angular inside). Load main.js and styles.css from your own server; the page answers every osos-request. Same screens as @osos-dashboard/ui.",
+  "version": "21.0.7",
   "main": "main.js",
   "files": [
     "*.js",
     "*.css",
     "media/**",
+    "assets/**",
     "3rdpartylicenses.txt"
   ],
   "sideEffects": true
